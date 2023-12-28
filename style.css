@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Scribble', sans-serif;
+}
+body{
+    background-color: #667E99 !important;
+}
+
+.animated-section {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon {
+    font-family: 'Rubik Scribble', sans-serif;
+    font-size: 3em;
+    color: #333; /* Adjust color as needed */
+    animation: fadeInOut 2s ease infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
