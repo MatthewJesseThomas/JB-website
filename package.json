@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "deploy": "git add . && git commit -m 'Commit' && git push origin main"
+    "deploy": "git add . && git commit -m 'Pages' && git push origin main"
   },
   "dependencies": {
     "bootstrap": "^5.3.2"

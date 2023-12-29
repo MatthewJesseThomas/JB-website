@@ -12,28 +12,48 @@ body{
     background-color: #667E99 !important;
     color: #998166 !important;
 }
-
-.animated-section {
-    position: relative;
-    text-align: center;
-    height: 100vh; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.yellow-text {
+    color: rgb(200, 162, 200) !important; /* Inner color */
+    -webkit-text-stroke: 2px brown; /* Outer color and stroke width */
+    text-stroke: 2px brown; /* For browsers that support the standard syntax */
 }
+// .animated-section {
+//     position: relative;
+//     text-align: center;
+//     height: 100vh; /* Adjust as needed */
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 
-.coming-soon {
-    font-family: 'Rubik Scribble', sans-serif;
-    font-size: 3em;
-    color: #333; /* Adjust color as needed */
-    animation: fadeInOut 2s ease infinite; /* Adjust animation duration as needed */
-}
+// .coming-soon {
+//     font-family: 'Rubik Scribble', sans-serif;
+//     font-size: 3em;
+//     color: #333; /* Adjust color as needed */
+//     animation: fadeInOut 2s ease infinite; /* Adjust animation duration as needed */
+// }
 
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
+// @keyframes fadeInOut {
+//     0%, 100% {
+//         opacity: 0;
+//     }
+//     50% {
+//         opacity: 1;
+//     }
+// }
+/* Carousel Styles */
+#carouselAutoplaying .carousel-inner img {
+    width: 80% !important;
+    height: 900% !important;
+    object-fit: cover !important; /* Maintain aspect ratio while covering the specified dimensions */
+    margin-left: 10rem !important;
+  }
+  
+  /* Additional styles for responsiveness or further customization */
+  @media (max-width: 768px) {
+    #carouselExampleAutoplaying .carousel-inner img {
+      width: 100% !important; /* Make the images full width on smaller screens */
+      height: auto !important; /* Maintain aspect ratio */
     }
-    50% {
-        opacity: 1;
-    }
-}
+  }
+// Carousel Styles End
